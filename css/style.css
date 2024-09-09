@@ -2,6 +2,7 @@
 
 /*** general classes***/
 
+
 .bg-color {
     background: rgb(0, 0, 17);
     background: linear-gradient(180deg, rgba(0, 0, 17, 1) 0%, rgba(0, 0, 96, 1) 19%, rgba(0, 0, 96, 1) 40%, rgba(0, 0, 17, 1) 69%);
