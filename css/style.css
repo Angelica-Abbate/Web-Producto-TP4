@@ -2,10 +2,20 @@
 
 /*** general classes***/
 
-
 .bg-color {
     background: rgb(0, 0, 17);
-    background: linear-gradient(180deg, rgba(0, 0, 17, 1) 0%, rgba(0, 0, 96, 1) 19%, rgba(0, 0, 96, 1) 40%, rgba(0, 0, 17, 1) 69%);
+    background: linear-gradient(180deg, rgba(0, 0, 17, 1) 0%, rgba(0, 0, 96, 1) 19%, rgba(0, 0, 96, 1) 30%, rgba(0, 0, 17, 1) 69%);
+}
+
+.bg-color::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2200px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 96, 1) 0%, rgba(0, 0, 96, 0) 40%);
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 h5 {
@@ -181,8 +191,8 @@ h1 {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(0, 204, 255, 0.1);
-    clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
+    background: var(--bs-background-polygon);
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 33% 100%);
 } */
 
 .hero-header .container {
@@ -248,7 +258,7 @@ h1 {
 
 
 
-/*** Feature ***/
+/*** Technical Feature ***/
 .feature-item::before {
     position: absolute;
     content: "";
@@ -256,13 +266,17 @@ h1 {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(255, 255, 255, .1);
-    clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
+    background: linear-gradient(200deg, rgba(64, 100, 255, 0.5) 20%, rgba(0, 0, 96, 0) 100%);
+    clip-path: polygon(70% 0, 100% 0, 100% 100%, 0% 140%);
+}
+
+.feature-item {
+    background-color: var(--bs-gray-dark);
 }
 
 .feature-item .border {
     position: relative;
-    border-color: rgba(255, 255, 255, .2) !important;
+    border: solid 4px var(--bs-dark) !important;
     z-index: 1;
 }
 
