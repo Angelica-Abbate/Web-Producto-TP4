@@ -16,17 +16,17 @@
     --bs-green: #192487;
     --bs-teal: #20c997;
     --bs-cyan: #0dcaf0;
-    --bs-white: #F6FFF4;
+    --bs-white: #DCDAFF;
     --bs-gray: #6c757d;
-    --bs-gray-dark: #000060;
-    --bs-primary: #4064FF;
-    --bs-secondary: #656565;
+    --bs-gray-dark: #1A0044;
+    --bs-primary: #FFE2D1;
+    --bs-secondary: #35156E;
     --bs-success: #198754;
     --bs-info: #0dcaf0;
     --bs-warning: #ffc107;
     --bs-danger: #dc3545;
     --bs-light: #7BB3FF;
-    --bs-dark: #000011;
+    --bs-dark: #040005;
     --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
@@ -48,7 +48,7 @@ body {
     margin: 0;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.5;
     color: var(--bs-white);
     background-color: #fff;
@@ -70,22 +70,35 @@ hr:not([size]) {
 
 h6,
 .h6,
-h5,
-.h5,
+
 h4,
 .h4,
 h3,
-.h3,
+.h3 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    color: var(--bs-white);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
 h2,
 .h2,
+h5,
+.h5,
 h1,
 .h1 {
     margin-top: 0;
     margin-bottom: .5rem;
-    font-family: "Saira", sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-weight: 900;
     line-height: 1.2;
-    color: var(--bs-white);
+    color: var(--bs-primary);
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 h1,
