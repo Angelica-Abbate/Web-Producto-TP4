@@ -17,6 +17,15 @@
     clip-path: polygon(60% 0, 100% 0, 100% 100%, 0% 100%);
 } */
 
+.glass-card {
+    background: rgba(220, 218, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 240, 222, 0.5);
+}
+
 h5 {
     font-weight: 700;
     font-size: 2rem;
@@ -146,6 +155,11 @@ img.animated.pulse {
         margin-right: 0;
         padding: 10px 0;
     }
+
+    .hero-top-space {
+        display: none;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -189,6 +203,7 @@ h1 {
     height: 280px;
 }
 
+
 .img-hero {
     max-height: 900px;
     float: right;
@@ -226,16 +241,6 @@ h1 {
 
 
 /*** Technical Feature ***/
-.feature-item::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(200deg, rgba(64, 100, 255, 0.5) 20%, rgba(0, 0, 96, 0) 100%);
-    clip-path: polygon(70% 0, 100% 0, 100% 100%, 0% 140%);
-}
 
 .feature-item {
     background-color: var(--bs-gray-dark);
@@ -282,21 +287,12 @@ h1 {
 
 /*** How To Use ***/
 .how-to-use {
-    position: relative;
-    background: url(../img/bg.png) center center no-repeat;
-    background-size: cover;
+    background: rgba(220, 218, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
 }
 
-.how-to-use::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(255, 255, 255, .1);
-    clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
-}
 
 .how-to-use .container {
     position: relative;
