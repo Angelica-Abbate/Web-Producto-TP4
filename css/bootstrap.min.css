@@ -19,7 +19,7 @@
     --bs-white: #DCDAFF;
     --bs-gray: #6c757d;
     --bs-gray-dark: #1A0044;
-    --bs-primary: #FFE2D1;
+    --bs-primary: #fddac6;
     --bs-secondary: #35156E;
     --bs-success: #198754;
     --bs-info: #0dcaf0;
@@ -48,7 +48,7 @@ body {
     margin: 0;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 1.5;
     color: var(--bs-white);
     background-color: #fff;
@@ -76,7 +76,7 @@ h4,
     margin-top: 0;
     margin-bottom: .5rem;
     font-family: "Open Sans", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.2;
     color: var(--bs-white);
 }
@@ -90,8 +90,8 @@ h3,
     font-weight: 300;
     line-height: 1.2;
     color: var(--bs-white);
-    letter-spacing: 2px;
-    text-transform: uppercase;
+
+
 }
 
 h2,
@@ -139,6 +139,8 @@ h2,
 h3,
 .h3 {
     font-size: calc(1rem + 0.5vw);
+    font-weight: 300;
+    letter-spacing: 2px;
 }
 
 @media(min-width: 1200px) {
@@ -164,7 +166,7 @@ h4,
 
 h5,
 .h5 {
-    font-size: 1.25rem
+    font-size: 2.5rem
 }
 
 h6,
@@ -3127,8 +3129,8 @@ fieldset:disabled .btn {
 
 .btn-primary {
     color: #000;
-    background-color: #90bc79;
-    border-color: #90bc79
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary)
 }
 
 .btn-primary:hover {
@@ -7844,6 +7846,10 @@ fieldset:disabled .btn {
     margin-bottom: 3rem !important
 }
 
+.mb-6 {
+    margin-bottom: 4rem !important
+}
+
 .mb-auto {
     margin-bottom: auto !important
 }
@@ -8108,6 +8114,11 @@ fieldset:disabled .btn {
 .py-5 {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important
+}
+
+.py-6 {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important
 }
 
 .pt-0 {
