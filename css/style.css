@@ -5,7 +5,11 @@
 .bg-color {
     background-size: 100% 100%;
     background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-    background-color: var(--bs-dark);
+    background: rgb(4, 0, 5);
+    background: linear-gradient(0deg, rgba(4, 0, 5, 1) 0%, rgba(4, 0, 5, 1) 12%, rgba(19, 0, 50, 1) 26%, rgba(4, 0, 5, 1) 38%, rgba(4, 0, 5, 1) 59%, rgba(4, 0, 5, 1) 75%, rgba(13, 0, 31, 1) 81%, rgba(19, 0, 50, 1) 87%, rgba(4, 0, 5, 1) 100%);
+}
+
+.hero-gradients {
     background-image: radial-gradient(circle at 100% 0%,
             rgba(220, 218, 255, 0.5) 5%,
             transparent 5%),
@@ -292,12 +296,7 @@ h1 {
     background: var(--bs-primary);
 }
 
-/*** carousel ***/
-.house {
-    position: relative;
-    background: url(../img/bg.png) center center no-repeat;
-    background-size: cover;
-}
+/*** house ***/
 
 .house .house-carousel {
     position: relative;
