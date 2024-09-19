@@ -211,23 +211,6 @@ h1 {
     z-index: 10;
 }
 
-/* .img-feature::after {
-    position: absolute;
-    z-index: -1;
-    width: calc(100% + 300px);
-    height: calc(100% + 300px);
-    top: -150px;
-    left: -150px;
-    display: block;
-    content: "";
-    background-image: radial-gradient(circle at 50% 47%,
-            rgba(220, 218, 255, 0.3) 30%,
-            transparent 30%), radial-gradient(circle at 50% 47%,
-            rgba(220, 218, 255, 0.2) 39%,
-            transparent 39%),
-        radial-gradient(circle at 50% 47%, #2b007049 48%, transparent 48%);
-} */
-
 /*** Technical Feature ***/
 
 .feature-video video {
@@ -289,8 +272,9 @@ h1 {
     z-index: 3;
 }
 
+
 .how-to-use .border {
-    border-color: rgba(255, 255, 255, 0.2) !important;
+    border-color: rgba(220, 218, 255, 0.25) !important;
 }
 
 /*** Product ***/
@@ -308,45 +292,32 @@ h1 {
     background: var(--bs-primary);
 }
 
-/*** Testimonial ***/
-.testimonial {
+/*** carousel ***/
+.house {
     position: relative;
     background: url(../img/bg.png) center center no-repeat;
     background-size: cover;
 }
 
-.testimonial::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(255, 255, 255, 0.1);
-    clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
-}
-
-.testimonial .testimonial-carousel {
+.house .house-carousel {
     position: relative;
     z-index: 1;
 }
 
-.testimonial-carousel .owl-item img {
-    width: 120px;
-    height: 120px;
+.house-carousel .owl-item img {
+    width: 100%;
+    height: 100%;
     border-color: rgba(255, 255, 255, 0.2) !important;
     margin: 0 auto 20px auto;
-    border-radius: 100px;
 }
 
-.testimonial-carousel .owl-dots {
-    margin-top: 25px;
+.house-carousel .owl-dots {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.testimonial-carousel .owl-dot {
+.house-carousel .owl-dot {
     position: relative;
     display: inline-block;
     margin: 0 5px;
@@ -361,8 +332,9 @@ h1 {
     transition: 0.5s;
 }
 
-.testimonial-carousel .owl-dot.active {
-    background: var(--bs-dark);
+.house-carousel .owl-dot.active {
+    color: var(--bs-primary);
+    border-color: rgba(253, 218, 198, 0.5);
 }
 
 /*** Blog ***/

@@ -46,10 +46,11 @@
 
 body {
     margin: 0;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1rem;
-    font-weight: 200;
-    line-height: 1.5;
+    font-family: "Lato", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.2px;
     color: var(--bs-white);
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
@@ -75,9 +76,10 @@ h4,
 .h4 {
     margin-top: 0;
     margin-bottom: .5rem;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 500;
     line-height: 1.2;
+    letter-spacing: 0.5px;
     color: var(--bs-white);
 }
 
@@ -86,12 +88,12 @@ h3,
 .h3 {
     margin-top: 0;
     margin-bottom: .5rem;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    line-height: 1.2;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     color: var(--bs-white);
-
-
 }
 
 h2,
@@ -103,8 +105,8 @@ h1,
     margin-top: 0;
     margin-bottom: .5rem;
     font-family: "PT Sans", sans-serif;
-    font-weight: 900;
-    line-height: 1.2;
+    font-weight: 700;
+    line-height: 1.1;
     color: var(--bs-primary);
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -138,9 +140,7 @@ h2,
 
 h3,
 .h3 {
-    font-size: calc(1rem + 0.5vw);
-    font-weight: 300;
-    letter-spacing: 2px;
+    font-size: calc(1.6rem + 0.5vw);
 }
 
 @media(min-width: 1200px) {
@@ -6291,7 +6291,7 @@ fieldset:disabled .btn {
     z-index: 1080;
     display: block;
     margin: 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -7313,7 +7313,11 @@ fieldset:disabled .btn {
 }
 
 .border {
-    border: 3px solid #f4f8f1 !important
+    border: 3px solid rgba(253, 218, 198, 0.25) !important;
+}
+
+.border-t {
+    border: 3px solid var(--bs-white) !important
 }
 
 .border-0 {
@@ -7761,6 +7765,11 @@ fieldset:disabled .btn {
     margin-bottom: 3rem !important
 }
 
+.my-6 {
+    margin-top: 4rem !important;
+    margin-bottom: 4rem !important
+}
+
 .my-auto {
     margin-top: auto !important;
     margin-bottom: auto !important
@@ -8119,6 +8128,11 @@ fieldset:disabled .btn {
 .py-6 {
     padding-top: 4rem !important;
     padding-bottom: 4rem !important
+}
+
+.py-8 {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important
 }
 
 .pt-0 {
