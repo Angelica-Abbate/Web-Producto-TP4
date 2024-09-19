@@ -6,7 +6,7 @@
     background-size: 100% 100%;
     background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
     background: rgb(4, 0, 5);
-    background: linear-gradient(0deg, rgba(4, 0, 5, 1) 0%, rgba(4, 0, 5, 1) 12%, rgba(19, 0, 50, 1) 26%, rgba(4, 0, 5, 1) 38%, rgba(4, 0, 5, 1) 59%, rgba(4, 0, 5, 1) 75%, rgba(13, 0, 31, 1) 81%, rgba(19, 0, 50, 1) 87%, rgba(4, 0, 5, 1) 100%);
+    background: linear-gradient(0deg, rgba(4, 0, 5, 1) 0%, rgba(0, 0, 0, 1) 3%, rgba(0, 0, 0, 1) 18%, rgba(19, 0, 50, 1) 36%, rgba(4, 0, 5, 1) 43%, rgba(4, 0, 5, 1) 59%, rgba(4, 0, 5, 1) 75%, rgba(13, 0, 31, 1) 81%, rgba(19, 0, 50, 1) 87%, rgba(4, 0, 5, 1) 100%);
 }
 
 .hero-gradients {
@@ -369,31 +369,20 @@ h1 {
     z-index: 1;
 }
 
-/*** Newsletter ***/
-.newsletter {
+/*** final ***/
+.final {
     position: relative;
-    background: url(../img/bg.png) center center no-repeat;
+    background: url(../img/end-img.avif) center center no-repeat;
     background-size: cover;
 }
 
-.newsletter::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(255, 255, 255, 0.1);
-    clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
-}
-
-.newsletter .container {
+.final .container {
     position: relative;
     z-index: 1;
 }
 
-.newsletter .form-control {
-    background: rgba(255, 255, 255, 0.3);
+.final-title {
+    margin-top: 80%;
 }
 
 /*** Footer ***/
