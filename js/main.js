@@ -86,4 +86,31 @@
     items: 1,
     dotsData: true,
   });
+
+  // --- CUSTOM SMOOTH SCROLLING
+  function scrollToTargetAdjusted(element, offset) {
+    var elementPosition = element.getBoundingClientRect().top;
+    var offsetPosition = elementPosition + window.pageYOffset - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  }
+
+  document.querySelectorAll("[data-scrollto]").forEach((node) => {
+    var id = node.getAttribute("data-scrollto");
+
+    node.addEventListener("click", function () {
+      // alert(id);
+
+      if (id && typeof id === "string") {
+        scrollToTargetAdjusted(document.getElementById(id), 100);
+        // document.getElementById(id).scrollIntoView({
+        //   behavior: "smooth",
+        // });
+        console.log(document.getElementById(id));
+      }
+    });
+  });
 })(jQuery);
