@@ -20,7 +20,7 @@
     --bs-gray: #6c757d;
     --bs-gray-dark: #1A0044;
     --bs-primary: #fddac6;
-    --bs-secondary: #35156E;
+    --bs-secondary: #f3c7ae;
     --bs-success: #198754;
     --bs-info: #0dcaf0;
     --bs-warning: #ffc107;
@@ -3139,16 +3139,16 @@ fieldset:disabled .btn {
 
 .btn-primary:hover {
     color: #000;
-    background-color: #a1c68d;
-    border-color: #9bc386
+    background-color: var(--bs-white);
+    border-color: var(--bs-white)
 }
 
 .btn-check:focus+.btn-primary,
 .btn-primary:focus {
     color: #000;
-    background-color: #a1c68d;
-    border-color: #9bc386;
-    box-shadow: 0 0 0 .25rem rgba(122, 160, 103, .5)
+    background-color: var(--bs-white);
+    border-color: var(--bs-white);
+    box-shadow: 0 0 0 .25rem rgba(220, 218, 255, 0.5)
 }
 
 .btn-check:checked+.btn-primary,
@@ -3157,8 +3157,8 @@ fieldset:disabled .btn {
 .btn-primary.active,
 .show>.btn-primary.dropdown-toggle {
     color: #000;
-    background-color: #a6c994;
-    border-color: #9bc386
+    background-color: var(--bs-white);
+    border-color: var(--bs-white);
 }
 
 .btn-check:checked+.btn-primary:focus,
@@ -3166,7 +3166,7 @@ fieldset:disabled .btn {
 .btn-primary:active:focus,
 .btn-primary.active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 .25rem rgba(122, 160, 103, .5)
+    box-shadow: 0 0 0 .25rem rgba(220, 218, 255, 0.5)
 }
 
 .btn-primary:disabled,
@@ -3238,7 +3238,7 @@ fieldset:disabled .btn {
     color: #fff;
     background-color: #157347;
     border-color: #146c43;
-    box-shadow: 0 0 0 .25rem rgba(60, 153, 110, .5)
+    box-shadow: 0 0 0 .25rem rgba(220, 218, 255, 0.5)
 }
 
 .btn-check:checked+.btn-success,
