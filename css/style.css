@@ -177,6 +177,10 @@ img.animated.pulse {
     padding-bottom: 6rem;
     overflow: hidden;
     height: 100vh;
+
+    background-image: url(../img/shinning.png);
+    background-position: center;
+
 }
 
 h1 {
