@@ -87,6 +87,27 @@
     dotsData: true,
   });
 
+  // --- Products Carousel
+  $(".products-carousel").owlCarousel({
+    autoplay: true,
+    smartSpeed: 1000,
+    loop: true,
+    margin: 24,
+    dots: true,
+    dotsData: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      560: {
+        items: 2,
+      },
+      992: {
+        items: 4,
+      },
+    },
+  });
+
   // --- CUSTOM SMOOTH SCROLLING
   function scrollToTargetAdjusted(element, offset) {
     var elementPosition = element.getBoundingClientRect().top;

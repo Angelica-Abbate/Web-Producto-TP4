@@ -19,8 +19,8 @@
     --bs-white: #DCDAFF;
     --bs-gray: #6c757d;
     --bs-gray-dark: #1A0044;
-    --bs-primary: #fddac6;
-    --bs-secondary: #f3c7ae;
+    --bs-primary: #ffe3c6;
+    --bs-secondary: #f3d3ae;
     --bs-success: #198754;
     --bs-info: #0dcaf0;
     --bs-warning: #ffc107;
@@ -118,7 +118,7 @@ h1,
 
 h1,
 .h1 {
-    font-size: calc(2rem + 1.5vw)
+    font-size: calc(2.5rem + 1.5vw)
 }
 
 @media(min-width: 1200px) {
@@ -3772,14 +3772,14 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-dark {
-    color: #1c2900;
-    border-color: #1c2900
+    color: var(--bs-gray-dark);
+    border-color: var(--bs-gray-dark)
 }
 
 .btn-outline-dark:hover {
     color: #fff;
-    background-color: #1c2900;
-    border-color: #1c2900
+    background-color: var(--bs-gray-dark);
+    border-color: var(--bs-gray-dark)
 }
 
 .btn-check:focus+.btn-outline-dark,
@@ -3793,8 +3793,8 @@ fieldset:disabled .btn {
 .btn-outline-dark.active,
 .btn-outline-dark.dropdown-toggle.show {
     color: #fff;
-    background-color: #1c2900;
-    border-color: #1c2900
+    background-color: var(--bs-gray-dark);
+    border-color: var(--bs-gray-dark)
 }
 
 .btn-check:checked+.btn-outline-dark:focus,
@@ -3807,7 +3807,7 @@ fieldset:disabled .btn {
 
 .btn-outline-dark:disabled,
 .btn-outline-dark.disabled {
-    color: #1c2900;
+    color: var(--bs-gray-dark);
     background-color: rgba(0, 0, 0, 0)
 }
 
@@ -7320,6 +7320,10 @@ fieldset:disabled .btn {
     border: 3px solid rgba(253, 218, 198, 0.25) !important;
 }
 
+.border-white {
+    border: 3px solid rgb(220, 218, 255, .25) !important;
+}
+
 .border-t {
     border: 3px solid var(--bs-white) !important
 }
@@ -7389,11 +7393,7 @@ fieldset:disabled .btn {
 }
 
 .border-dark {
-    border-color: #1c2900 !important
-}
-
-.border-white {
-    border-color: #fff !important
+    border: 3px solid rgb(26, 0, 68) !important
 }
 
 .border-1 {
@@ -8389,7 +8389,7 @@ fieldset:disabled .btn {
 }
 
 .text-dark {
-    color: var(--bs-dark) !important
+    color: var(--bs-gray-dark) !important
 }
 
 .text-white {
