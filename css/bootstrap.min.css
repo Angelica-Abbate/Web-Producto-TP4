@@ -7321,7 +7321,7 @@ fieldset:disabled .btn {
 }
 
 .border-white {
-    border: 3px solid rgb(220, 218, 255, .25) !important;
+    border: 3px solid rgba(220, 218, 255, .25) !important;
 }
 
 .border-t {
@@ -7365,7 +7365,7 @@ fieldset:disabled .btn {
 }
 
 .border-primary {
-    border-color: #90bc79 !important
+    border: 3px solid rgba(253, 218, 198, 0.25) !important;
 }
 
 .border-secondary {

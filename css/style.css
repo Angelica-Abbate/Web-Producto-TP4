@@ -31,6 +31,10 @@
     clip-path: polygon(60% 0, 100% 0, 100% 100%, 0% 100%);
 } */
 
+.opacity-3 {
+    opacity: .3;
+}
+
 .glass-card {
     background: rgba(220, 218, 255, 0.2);
     border-radius: 10px;
@@ -43,18 +47,18 @@
 .linea-horizontal {
     width: 30%;
     height: 3px !important;
-    background-color: var(--bs-primary);
+    background-color: var(--bs-white);
     margin: 12px 0 !important;
 }
 
 .img-icon {
     height: 50px;
-    fill: var(--bs-gray-dark)
+    fill: var(--bs-white)
 }
 
 .img-icon-feature {
     height: 32px;
-    fill: var(--bs-primary)
+    fill: var(--bs-white)
 }
 
 .padding-y {
@@ -219,6 +223,30 @@ h1 {
     color: var(--bs-light);
 }
 
+/*** How To Use ***/
+.how-to-use {
+    /* background: #d1a97f;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    background: rgba(13, 1, 31, 0.8);
+    /* border-top: 3px solid rgba(253, 218, 198, 0.25);
+    border-bottom: 3px solid rgba(253, 218, 198, 0.25); */
+    border-top: 3px solid rgba(220, 218, 255, .25);
+    border-bottom: 3px solid rgb(220, 218, 255, .25);
+}
+
+.how-to-use .container {
+    position: relative;
+    z-index: 3;
+}
+
+
+.how-to-use .border {
+    border-color: rgba(220, 218, 255, 0.25) !important;
+}
+
 
 /* FEATURES */
 
@@ -277,24 +305,6 @@ h1 {
     font-style: italic;
     font-weight: 200;
     text-transform: capitalize;
-}
-
-/*** How To Use ***/
-.how-to-use {
-    background: #d1a97f;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-}
-
-.how-to-use .container {
-    position: relative;
-    z-index: 3;
-}
-
-
-.how-to-use .border {
-    border-color: rgba(220, 218, 255, 0.25) !important;
 }
 
 /*** Personalize ***/
