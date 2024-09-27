@@ -229,7 +229,7 @@ h1 {
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
 
-    background: rgba(13, 1, 31, 0.8);
+    background: rgb(13, 2, 29);
     /* border-top: 3px solid rgba(253, 218, 198, 0.25);
     border-bottom: 3px solid rgba(253, 218, 198, 0.25); */
     border-top: 3px solid rgba(220, 218, 255, .25);
