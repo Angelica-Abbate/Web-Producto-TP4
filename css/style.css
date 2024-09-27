@@ -181,7 +181,6 @@ img.animated.pulse {
     padding-bottom: 6rem;
     overflow: hidden;
     height: 100vh;
-
     background-image: url(../img/shinning.png);
     background-position: center;
 
@@ -310,9 +309,9 @@ h1 {
 /*** Personalize ***/
 .personalize {
     height: 60vh;
-    background-color: rgba(255, 227, 198, 1);
+    background-color: rgba(15, 0, 39, 0.8);
     background-image: url("../img/fondo-perz-hd.png");
-    background-blend-mode: luminosity;
+    background-blend-mode: darken;
 
 
     /* Create the parallax scrolling effect */
@@ -332,15 +331,16 @@ h1 {
 }
 
 .personalize-text h3 {
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .personalize-text h4 {
     /* text-shadow: 1px 1px 60px #ede1fd, 1px 1px 10px #f8eeff; */
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .personalize-text a {
+    opacity: .7;
     font-weight: 800;
 }
 

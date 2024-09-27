@@ -3776,6 +3776,11 @@ fieldset:disabled .btn {
     border-color: var(--bs-gray-dark)
 }
 
+.btn-outline-white {
+    color: var(--bs-white);
+    border-color: var(--bs-white)
+}
+
 .btn-outline-dark:hover {
     color: #fff;
     background-color: var(--bs-gray-dark);
