@@ -491,6 +491,10 @@ h1 {
     max-height: 120px;
 }
 
+.menu-icon {
+    color: var(--bs-white);
+    font-size: 28px;
+}
 
 
 
