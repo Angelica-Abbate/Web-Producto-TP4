@@ -6,7 +6,7 @@
     background-size: 100% 100%;
     background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
     background: rgb(4, 0, 5);
-    background: linear-gradient(0deg, rgb(10, 0, 26) 0%, rgb(0, 0, 0) 5%, rgba(0, 0, 0, 1) 18%, rgba(19, 0, 50, 1) 36%, rgba(4, 0, 5, 1) 43%, rgba(4, 0, 5, 1) 59%, rgba(4, 0, 5, 1) 75%, rgba(13, 0, 31, 1) 81%, rgba(19, 0, 50, 1) 87%, rgba(4, 0, 5, 1) 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 16%, rgba(7, 1, 23, 1) 21%, rgba(15, 0, 34, 1) 25%, rgba(15, 0, 34, 1) 30%, rgba(4, 0, 5, 1) 37%, rgba(4, 0, 5, 1) 42%, rgba(15, 0, 34, 1) 53%, rgba(15, 0, 41, 1) 57%, rgba(4, 0, 5, 1) 61%, rgba(4, 0, 5, 1) 69%, rgba(6, 0, 20, 1) 74%, rgba(6, 0, 20, 1) 85%, rgba(15, 0, 34, 1) 88%, rgba(4, 0, 5, 1) 100%);
 }
 
 .hero-gradients {
@@ -52,13 +52,20 @@
 }
 
 .img-icon {
-    height: 50px;
-    fill: var(--bs-white)
+    height: 64px;
+
+    fill: var(--bs-primary)
 }
+
+.img-icon path,
+.img-icon circle {
+    stroke: var(--bs-primary) !important;
+}
+
 
 .img-icon-feature {
     height: 32px;
-    fill: var(--bs-white)
+    fill: var(--bs-primary)
 }
 
 .padding-y {
@@ -141,6 +148,7 @@ img.animated.pulse {
 .navbar {
     padding: 11px 0 !important;
     height: 80px;
+    font-size: 0.9rem;
 }
 
 .navbar .logo img {
@@ -191,7 +199,7 @@ h1 {
 }
 
 .hero-top-space {
-    height: 300px;
+    height: 150px;
 }
 
 .img-hero {
@@ -229,11 +237,11 @@ h1 {
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
 
-    background: rgb(13, 2, 29);
+    /* background: rgb(13, 2, 29); */
     /* border-top: 3px solid rgba(253, 218, 198, 0.25);
     border-bottom: 3px solid rgba(253, 218, 198, 0.25); */
     border-top: 3px solid rgba(220, 218, 255, .25);
-    border-bottom: 3px solid rgb(220, 218, 255, .25);
+    /* border-bottom: 3px solid rgb(220, 218, 255, .25); */
 }
 
 .how-to-use .container {
@@ -275,41 +283,10 @@ h1 {
     z-index: 1;
 }
 
-/*** Deal ***/
-.deal {
-    position: relative;
-    background: url(../img/bg.png) center center no-repeat;
-    background-size: cover;
-}
-
-.deal::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(255, 255, 255, 0.1);
-    clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
-}
-
-.deal .bg-white {
-    position: relative;
-    z-index: 1;
-}
-
-.deal .cdt span {
-    display: block;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 200;
-    text-transform: capitalize;
-}
-
 /*** Personalize ***/
 .personalize {
     height: 60vh;
-    background-color: rgba(15, 0, 39, 0.8);
+    background-color: rgba(15, 0, 34, 0.8);
     background-image: url("../img/fondo-perz-hd.png");
     background-blend-mode: darken;
 
@@ -443,12 +420,19 @@ h1 {
 
 .final-title {
     margin-top: 82%;
-    background: linear-gradient(to top, #DCDAFF 16%, #FDDAC6 91%, #FDDAC6 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    /* background: linear-gradient(to top, #DCDAFF 16%, #FDDAC6 91%, #FDDAC6 100%); */
+    /* -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
 }
 
 /*** Footer ***/
+.footer {
+    background: rgb(8, 0, 22);
+    background: linear-gradient(0deg, rgba(4, 0, 5, 1) 80%, rgba(4, 0, 5, 1) 88%, rgba(0, 0, 0, 0) 100%);
+    font-size: .9rem;
+    padding-top: 20px;
+}
+
 .footer .btn.btn-link {
     display: block;
     margin-bottom: 10px;
@@ -522,11 +506,12 @@ h1 {
     }
 
     .hero-top-space {
-        height: 100px;
+        height: 50px;
     }
 
     .img-hero-container {
         order: 2;
+        margin-top: 55px;
     }
 
     .img-hero {
@@ -555,10 +540,11 @@ h1 {
     .final .container {
         padding-right: 36px;
         padding-left: 36px;
+        margin-bottom: 40px;
     }
 
     .final-title {
-        margin-top: 106%;
+        margin-top: 90%;
     }
 
     .personalize {
@@ -583,7 +569,7 @@ h1 {
     .img-tec-feature {
         display: flex;
 
-        max-height: 400px;
+        max-height: 380px;
         margin: 0 auto;
     }
 
@@ -598,6 +584,30 @@ h1 {
 
     .feature-2-img {
         order: 1;
+    }
+
+    .personalize {
+        height: 55vh;
+    }
+
+    .house {
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+
+    .bg-color {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 1) 16%, rgba(7, 1, 23, 1) 21%, rgba(15, 0, 34, 1) 26%, rgba(15, 0, 34, 1) 31%, rgba(4, 0, 5, 1) 39%, rgba(4, 0, 5, 1) 40%, rgba(15, 0, 34, 1) 53%, rgba(15, 0, 41, 1) 58%, rgba(4, 0, 5, 1) 64%, rgba(4, 0, 5, 1) 67%, rgba(6, 0, 20, 1) 71%, rgba(6, 0, 20, 1) 83%, rgba(15, 0, 34, 1) 85%, rgba(15, 0, 34, 1) 89%, rgba(4, 0, 5, 1) 100%);
+    }
+
+    .footer-menu {
+        display: none;
+    }
+
+    .hero-header {
+        background-image: url(../img/shinning-2.png);
+        background-size: cover;
+        background-position: center;
+
     }
 }
 
